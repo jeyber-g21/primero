@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>VIVE la copa america</title>
+        <style>
+            .titleh{
+                     text-align: center;
+                     background-color: darkred;
+                     color: white;
+            }
+            #row2{
+                  padding: 10px;
+                  background-color: lightblue;
+            }
+            #row3{
+                  padding: 20px;
+            }
+            
+            #container {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: lightblue;
+            }
+            #container > div {
+                background-color: white;
+                font-size: 20px;
+                margin: 10px;
+                padding: 10px;
+                width: 150px;
+                border: 1px solid black;
+                text-align: center;
+                font-family: cursive;
+            }
+            .grid{
+                background-color: green;
+                display: grid;
+                padding: 20px;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                grid-template-columns: 150px 150px 1px 150px 150px;
+            }
+            .grid > div{
+                background-color: whitesmoke;
+                border: 1px solid black;
+                text-align: center;
+                font-size: 20px;
+                font-family: cursive;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 class="titleh">Copa America</h1>
+        <br>
+        <h4>Lo que va de la copa america</h4>
+    <div id="row2">
+        <div class="col-12">
+        <p><img src="imagenes/copa_america.jpg" alt="Smiley face" style="float:left;width:500px">
+            Los 16 encuentros de la primera jornada dejaron algunas sorpresas, otros resultados lógicos, 15 goles anotados y se repartieron 22 puntos entre las 16 selecciones participantes en la Copa América 2024. Pues el martes 25 de junio da inicio a la segunda fecha, el Grupo A empezará a definir cuáles son los 2 clasificados a los cuartos de final, Argentina y Chile son los llamados a pasar, pero se enfrentarán en esta jornada y así revivirán las finales de las finales que disputaron en las ediciones 2015 y 2016.
+
+            En el Grupo B se vienen encuentros interesantes con la necesidad de Ecuador y Jamaica de ganar y seguir con vida, mientras que el duelo de líderes es entre Venezuela y México, los primeros llegando de dar la sorpresa y los segundo con algunas críticas por el debut con un triunfo poco vistoso. En el Grupo C se podría dar la clasificación de Estados Unidos contra la aguerrida Panamá, mientras que Uruguay espera sumar 6 unidades contra una limitada Bolivia que espera cambiar su imagen.
+
+            Y en el Grupo C, el que más sorprendió porque Brasil no pudo salir del empate con Costa Rica, tendrá una segunda jornada con Colombia buscando romper la férrea defensa tica, mientras que los brasileños esperan salir de la mala racha de 5 partidos oficiales sin ganar, contra una Paraguay que quiere dar el segundo batacazo de la Copa América 2024.
+        </p>   
+        </div>
+    <br> 
+    
+    </div>
+    <br>    
+            <h4>Equipos que juegan en esta copa</h4>
+            <br>
+        <div id="container"> 
+            <div>1.Argentina</div>
+            <div>2.Bolivia</div>
+            <div>3.Chile</div>
+            <div>4.Uruguay</div>
+            <div>5.Ecuador</div>
+            <div>6.Perú</div>
+            <div>7.Brasil</div>
+            <div>8.Venezuela</div>
+            <div>9.Colombia</div>
+            <div>10.Paraguay</div>
+            <div>11.Estados Unidos</div>
+            <div>12.México</div>
+            <div>13.Jamaica</div>
+            <div>14.Panamá</div>
+            <div>15.Canada</div>
+            <div>16.Costa Rica</div>
+        </div>
+        <br>
+        <img src="imagenes/logo.png" alt="Smiley face" style="width:100px; float: right;"><h4>Resultados de los partidos jugados</h4>
+        <br>
+        <div class="grid">
+            <div class="grid-item"><img src="imagenes/arg.jpg" alt="Smiley face" style="width:50px">vs<img src="imagenes/canada.jpg" alt="Smiley face" style="width:45px"></div>
+            <div class="grid-item"><strong>2:1</strong></div>
+            <div class="grid-item"></div>
+            <div class="grid-item">Colombia vs Paraguay</div>
+            <div class="grid-item"><strong>2:1</strong></div>
+            <div class="grid-item">Chile vs Argentina</div>
+            <div class="grid-item"><strong>0:1</strong></div>
+            <div class="grid-item"></div>
+            <div class="grid-item">Ecuador vs Jamaica</div>
+            <div class="grid-item">3:1</div>
+            <div class="grid-item">Peru vs Canada</div>
+            <div class="grid-item">0:1</div>
+            <div class="grid-item"></div>
+            <div class="grid-item">Estados Unidos vs Bolivia</div>
+            <div class="grid-item">2:0</div>
+        </div>        
+     <br>
+     <h4>Prediccion de marcadores</h4>  
+     <form>
+         <label for="marcador1">Colombia vs Costa rica</label>
+         <input type="text" id="marcador1" placeholder="Escriba marcador">
+         <label for="marcador2">Colombia vs Bazil</label>
+         <input type="text" id="marcador2" placeholder="Escriba marcador"><br>
+         <label for="marcador2">Brazil vs Costa Rica</label>
+         <input type="text" placeholder="Escriba marcador3" id="marcador1">
+         <label for="marcador2">Uruguay vs Bolivia</label>
+         <input type="text" placeholder="Escriba marcador3" id="marcador3"><br>
+
+         <label for="seleccion">Escoja</label>
+         <input type="radio" id="seleccion" name="ganar">
+         <!--<label for="marcador2">Uruguay vs Bolivia</label>-->
+         <input type="radio" id="seleccion1" name="ganar">
+         <input type="submit">
+
+     </form> 
+    </body>
+<html>
